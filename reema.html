@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- اللغة هي الانكليزية وجهة الصفحة من اليسار إلى اليمين-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather in my city</title>
+    <link rel="stylesheet" href="./styles.css"/>
+  </head>
+  <body>
+    <main>
+      <h1 class="label">Weather in my city</h1>
+      <form id="search">
+        <div class="flex">
+          <input
+            id="cityIn"
+            type="search"
+            name="city"
+            placeholder="Enter city name"
+            required
+          />
+          <input id="searchButton" type="submit" value="Get Weather" />
+        </div>
+      </form>
+
+      <section id="result">
+        <h1 id="cityOut"></h1>
+        <ul class="conditions">
+          <li>
+            <img id="mainIcon" src="" alt="" />
+            <div class="main">
+              <p id="mainTemp"></p>
+              <p id="mainDescription"></p>
+            </div>
+          </li>
+          <li>
+            <h2>Forecast</h2>
+            <p><span id="maxTemp" class="degree"></span> Max</p>
+            <p><span id="minTemp" class="degree"></span> Min</p>
+          </li>
+          <li>
+            <div>
+              <h2>Humidity</h2>
+              <span id="humidity"></span>
+            </div>
+            <div>
+              <h2>Wind Speed</h2>
+              <span id="windSpeed"></span> m/s
+            </div>
+          </li>
+        </ul>
+        <footer>
+          <cite
+            ><a
+              href="https://openweathermap.org/"
+              rel="external"
+              target="_blank"
+              >Open Weather Map</a
+            ></cite
+          >
+          📅 <time></time>
+        </footer>
+      </section>
+    </main>
+    <a href="index.html">
+    <button style="margin-left: 50%; background-color: rgb(65, 78, 78); color: black; padding: 10px;">الصفحة الرئيسية</button>
+  </a>
+    <script src="./script.js"></script>
+  </body>
+</html>
